@@ -4,9 +4,14 @@ import Link from 'next/link';
 type StarshipProps = {
   name: string;
   model: string;
+  manufacturer: string;
 };
 
-export default function StarshipList({ name, model }: StarshipProps) {
+export default function StarshipList({
+  name,
+  model,
+  manufacturer,
+}: StarshipProps) {
   return (
     <div className='mx-auto max-w-2xl'>
       <Image
@@ -18,7 +23,10 @@ export default function StarshipList({ name, model }: StarshipProps) {
       />
 
       <h2 className='text-lg font-bold text-gray-700 mt-4'>{name}</h2>
-      <p className='max-w-sm text-gray-700 mt-2'>{model}</p>
+      <p className='max-w-sm text-gray-700 mt-2'>
+        {' '}
+        {model}. {manufacturer}.
+      </p>
 
       {/* Readmore Btn */}
       <div className='mt-5'>

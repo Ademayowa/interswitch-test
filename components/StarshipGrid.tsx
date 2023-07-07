@@ -11,7 +11,7 @@ type StarshipGridProps = {
 export function StarshipGrid({ starshipLists }: StarshipGridProps) {
   const [searchText, setSearchText] = useState('');
 
-  // Search filter by name or manufacturer
+  // Search filter by name or model
   const searchFilter = (starshipLists: Starship[]) => {
     return starshipLists.filter(
       (starship) =>
@@ -50,6 +50,7 @@ export function StarshipGrid({ starshipLists }: StarshipGridProps) {
             <StarshipList
               name={starship.name}
               model={starship.model}
+              manufacturer={starship.manufacturer}
               key={starship.name}
             />
           );

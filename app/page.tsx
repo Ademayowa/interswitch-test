@@ -9,6 +9,7 @@ export default async function HomePage() {
     <>
       <Hero />
       <div className='xxl:mx-auto xxl:max-w-7xl'>
+        {/* List all Starships in a Grid system */}
         <StarshipGrid starshipLists={starshipLists} />
       </div>
     </>
