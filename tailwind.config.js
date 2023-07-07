@@ -19,12 +19,10 @@ module.exports = {
         hero: "url('/hero-banner.jpg')",
       },
       backgroundSize: {
-        auto: 'auto',
         cover: 'cover',
       },
       backgroundPosition: {
         center: 'center',
-        top: 'top',
       },
     },
   },
